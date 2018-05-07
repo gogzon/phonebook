@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <title>Phonebook entry</title>
+ <style type="text/css">
+p {
+   color: Black;
+   }
+   form {
+      color: white;
+
+     } 
+.content {
+     max-width: 500px;
+     margin:auto;
+     }    
+div {
+    font-family: "segoe-ui", "open-sans", tahoma, arial;
+    background-color: #508abb;
+    padding: 20px;
+    width: 300px;
+}
+ </style>
+ </head>
+ <body>
+ <p align="center">ENTER CONTACTS TO THE PHONEBOOK</p>
+ <div class="content">
+  <form action="insert.php" method="post">
+  
+              <select name="Gender">
+              <option value="Mr.">Mr.</option>
+              <option value="Mrs.">Mrs.</option>
+              </select>
+             
+      NAME : <input type="text" name="Name" required="required">
+      <br/>
+      <br/>
+      LASTNAME : <input type="text" name="Lastname">
+      <br/>
+      <br/>
+      PHONE : <input type="text" name="Phone" required="required">
+      <br/>
+      <br/>
+      EMAIL : <input type="text" name="Email">
+      <br/>
+      <br/>
+              <input type="submit" value="Insert">
+      
+   </form>
+   <form action="http://localhost/grn_pb/table.php">
+    <input type="submit" value="Display Phonebook" />
+</form>
+  </div> 
+  
+   </body>
+</html>
